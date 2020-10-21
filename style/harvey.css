@@ -87,8 +87,8 @@
 .freeze:hover .innerText{
     display:block;
     position:absolute;
-    top: 70%;
-    left: 50%;
+    top: 75%;
+    left: 30%;
 }
 
 .vid{
