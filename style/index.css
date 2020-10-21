@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+}
+
+.container {
+
+	padding: 5px;
+	background: rgb(120, 250, 174);
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: rgb(29, 167, 86);
+	border-radius: 20px;
+	
+}
+
+	.header {
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	order:1;
+	}
+
+	.homebutton{order:0;}
+	
+	.button0 {
+		padding: 31px 31px;
+		background-color: white;
+		display: block;
+		border-radius: 20px;
+		font-family: cooper;
+		font-weight: bold;
+		transition-duration: 0.4s;
+		text-align: center;
+	 }
+	
+	 .button0:hover {
+	  background-color: #4CAF50; /* Green */
+	  color: green;
+	}
+	.contactbutton {order:2;}
+	
+.nonnav{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+.mainbox{
+font-size:20px;
+background: rgb(120, 250, 174);
+  padding: 30px 30px; 
+  /* border: solid green 2px; */
+  width: 40vw;
+}
+    .text{
+	/* border: solid black 2px; */
+	width: 100%;
+	}
+
+	.img{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+		.freeze{
+		position: relative;
+		width: 70%;
+		/* border: solid black 2px; */
+		}
+
+		.logos{
+			/* border: solid black 2px; */
+			width: 28%;
+			text-align: center;
+			font-weight: 600;
+		}
+
+.freeze:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: inset 0px 0px 10px 20px rgb(120, 250, 174);
+}
+
+.vid{
+font-size:15px;
+  text-align: center;
+  width:49.3vw;
+  height: 35.6vw;
+}
+
+.members{
+	display: flex;
+	flex-direction: column;
+	background: rgb(120, 250, 174);
+ 	
+}
+
+
+.button {
+	padding: 15px 20px;
+	background-color: rgb(100,205,105);
+	display: block;
+	border-radius: 20px;
+	font-family: cooper;
+	font-weight: bold;
+	transition-duration: 0.4s;
+	text-align: center;
+}
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.fb:hover{
+	background: white;
+	border-radius: 20px;
+}
+
+
+@media (max-width:1000px){
+	.nonnav{
+	flex-direction: column;
+	align-items: center;
+	}
+	.members{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		}
+	.mainbox{
+		width: 90vw;
+	}
+    .vid{
+		width:92vw;
+	}
+}
