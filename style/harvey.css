@@ -5,9 +5,9 @@
 }
 
 .container {
-
 	padding: 5px;
-	background: rgb(229, 247, 131);
+    /* background: rgb(229, 247, 131); */
+    background: rgb(26, 54, 37);
 }
 
 .nav{
@@ -21,7 +21,8 @@
 
 	.header {
 	padding: 10px 0px;
-	text-align: center;
+    text-align: center;
+    color:white;
 	font-size: 50px;
 	font-weight: 600;
 	order:1;
@@ -29,18 +30,19 @@
 
 	.homebutton{order:0;}
 	
-	.button0 {
-		padding: 31px 31px;
+	.button {
+		padding: 31px 45px;
 		background-color: white;
 		display: block;
 		border-radius: 20px;
 		font-family: cooper;
 		font-weight: bold;
 		transition-duration: 0.4s;
-		text-align: center;
+        text-align: center;
+        border: black solid 2px;
 	 }
 	
-	 .button0:hover {
+	 .button:hover {
 	  background-color: #4CAF50; /* Green */
 	  color: green;
 	}
@@ -54,14 +56,13 @@
 
 
 .mainbox{
-
-/* background: rgb(229, 247, 131); */
   padding: 30px 30px; 
   /* border: solid green 2px; */
   width: 40vw;
 }
     .text{
         font-size:20px;
+        color:white;
 	}
 
 	.img{
@@ -79,7 +80,6 @@
 		.logos{
 			/* border: solid black 2px; */
 			width: 28%;
-			text-align: center;
 			font-weight: 600;
 		}
 
@@ -94,38 +94,46 @@
 .vid{
 font-size:15px;
   text-align: center;
-  width:49.3vw;
+  width:50vw;
   height: 35.6vw;
 }
 
-.members{
-	display: flex;
-	flex-direction: column;
-	/* background: rgb(120, 250, 174); */
- 	
-}
-
-
-.button {
-	padding: 15px 20px;
-	background-color: rgb(100,205,105);
+.dropbtn {
+	padding: 21px 31px;
+    background-color: white;
+    border: black solid 2px;
 	display: block;
 	border-radius: 20px;
 	font-family: cooper;
 	font-weight: bold;
 	transition-duration: 0.4s;
-	text-align: center;
 }
-.button:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block;  */
 }
+.dropdown-content {display: none;}
+.dropdown-content a {
+	background: rgb(29, 167, 86);
+    color: black;
+    display: block;
+    font-family: cooper;
+    border: black solid 2px;
+    border-radius: 20px;
+    padding: 7.5px 20px;
+    text-align: center;
+    
+}
+.dropdown:hover .dropdown-content {display:block;}
+.dropdown-content a:hover {background-color: white;}
+
+
 .ig:hover{
-	background: rgb(120, 250, 174);
 	border-radius: 50px;
 }
 .yt:hover{
-	background: white;
     border-radius: 40px;
 }
 .me{border-radius: 20px;}
@@ -143,11 +151,13 @@ font-size:15px;
 	flex-direction: column;
 	align-items: center;
 	}
-	.members{
+	.dropdown{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		}
+        }
+    .dropdown:hover .dropdown-content {display:flex;
+        flex-wrap: wrap;}
 	.mainbox{
 		width: 90vw;
 	}
