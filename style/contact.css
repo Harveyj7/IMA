@@ -2,93 +2,106 @@
 	margin: 0;
 	padding: 0;
 	font-family: calibri;
-	/*font-size: 30px;*/
 }
 
 .container {
-  display: grid;
-  padding: 10px;
-    grid-gap: 5px; 
-	background: rgb(0,0,140);
+	
+	padding: 5px;
+	background: rgb(26, 54, 37);
 }
 
-.header {
-	grid-column:1/10;
-	grid-row:1;
-  text-align: center;
-background:rgb(150,250,150);
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: rgb(29, 167, 86);
+	border-radius: 20px;
+	
+}
+
+	.header {
+	padding: 10px 0px;
+	text-align: center;
+	color:white;
 	font-size: 50px;
+	font-weight: 600;
+	order:1;
+	}
+
+	.homebutton{order:0;}
+	
+	.button {
+		padding: 31px 45px;
+		background-color: white;
+		display: block;
+		border-radius: 20px;
+		font-family: cooper;
+		font-weight: bold;
+		transition-duration: 0.4s;
+        text-align: center;
+        border: black solid 2px;
+	 }
+	
+	 .button:hover {
+	  background-color: #4CAF50; /* Green */
+	  color: green;
+	}
+	.contactbutton {order:2;}
+	
+.nonnav{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
 }
 
-.p{
-grid-column:2/10;
-grid-row: 2;
-font-size:30px;
-background: rgb(200,235,255);
-  text-align: center;
-  padding: 50px 190px;
-  
+.text{
+	color:white;
+	font-size: 30px;
+	text-align: center;
 }
 
-.homebutton{
-	grid-column:1;
-	grid-row:1;
-}
-.home {
-	padding: 21px;
-	background-color: white;
+.dropbtn {
+	padding: 21px 31px;
+    background-color: white;
+    border: black solid 2px;
 	display: block;
 	border-radius: 20px;
 	font-family: cooper;
 	font-weight: bold;
 	transition-duration: 0.4s;
-	text-align: center;
- }
-
- .home:hover {
-  background-color: #4CAF50; /* Green */
-  color: green;
-}
-.contactbutton {
-	grid-column:2;
-	grid-row:1;
-}
-.contact{
-	padding: 21px;
-	background-color: white;
-	display: block;
-	border-radius: 20px;
-	font-family: cooper;
-	font-weight: bold;
-	transition-duration: 0.4s;
-	text-align: center;
- }
- .contact:hover {
-  background-color: #4CAF50; /* Green */
-  color: green;
 }
 
-
-.member{
-	grid-column:1;
-	grid-row: 2;
- 	background: rgb(120,250,230);
- 	
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block;  */
 }
-
-
-.button {
-	padding: 15px 20px;
-	background-color: rgb(100,205,105);
-	display: block;
-	border-radius: 20px;
-	font-family: cooper;
-	font-weight: bold;
-	transition-duration: 0.4s;
-	text-align: center;
+.dropdown-content {display: none;}
+.dropdown-content a {
+	background: rgb(29, 167, 86);
+    color: black;
+    display: block;
+    font-family: cooper;
+    border: black solid 2px;
+    border-radius: 20px;
+    padding: 7.5px 20px;
+    text-align: center;  
 }
-.button:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
+.dropdown:hover .dropdown-content {display:block;}
+.dropdown-content a:hover {background-color: white;}
+
+@media (max-width:1000px){
+	.nonnav{
+	flex-direction: column;
+	align-items: center;
+	}
+	.dropdown{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+        }
+    .dropdown:hover .dropdown-content {display:flex;
+		flex-wrap: wrap;}
 }
 
