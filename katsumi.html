@@ -6,43 +6,115 @@
   	<body>
 	  
 		<div class="container">
-			<nav class="nav">
-				<div class="header">Katsumi- Bboy Kat</div>
-				<div class="homebutton">
-					<a href="index.html" class="button" >Home</a>
-				</div>
-				<div class="contactbutton">
-					<a href="contact.html" class="button" >Contact us</a>
-				</div>
-			</nav>
+        </nav>
+        <nav class="nav">
+            <div class="ima">
+                <a href="index.html"><img src="images/imalogo.jpg" width=130px>	</a>			 
+            </div>  
+            <div class="header">Katsumi- Bboy Kat</div>
+            <div class="logos">
+                    
+                    <a href="https://www.facebook.com/IMABristol0117">
+                        <img class="fb" src="images/fb.svg" >
+                    </a>
+                    <a href="https://www.instagram.com/IMABristol0117/">
+                        <img class="ig" src="images/iglogo.png" >
+                    </a>
+            </div> 
+            <div class="ima">
+                <a href="index.html"><img src="images/imalogo.jpg" width=130px>	</a>			 
+            </div>  
+        </nav>
 
-			<div class="nonnav">
-				<div class="dropdown">
-					<a class="dropbtn" href="members.html">Members</a>
-					<div class="dropdown-content">
-						<a href="katsumi.html" >Katsumi</a>
-						<a href="harvey.html" class="button">Harvey</a>
-						<a href="nestor.html" class="button">Nestor</a>
-						<a href="miguel.html" class="button">Miguel</a>
-						<a href="pasik.html" class="button">Pasik</a>
-						<a href="arpad.html" class="button">Arpad</a>
-						<a href="elvin.html" class="button">Elvin</a>
-						<a href="robert.html" class="button">Roberto</a>
-						<a href="howing.html" class="button">Howing</a>
-						<a href="elena.html" class="button">Elena</a>
-						<a href="avery.html" class="button">Avery</a>
-					</div>
-				</div>
-			
-				<div class="text"><br>
-					<p >I am Bboy Kat, I've been breaking since XXXX and became a member of IMA in XXXX. 
-                        Check out the videos and <b>follow my Youtube and Instagram!
-					</p>				
-				</div>
+			<div class="flex1">
+                <div class="dropdown">
+                    <a class="dropbtn" href="members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="katsumi.html" >Katsumi</a>
+                        <a href="harvey.html" >Harvey</a>
+                        <a href="nestor.html" >Nestor</a>
+                        <a href="miguel.html" >Miguel</a>
+                        <a href="pasik.html" >Pasik</a>
+                        <a href="arpad.html" >Arpad</a>
+                        <a href="elvin.html" >Elvin</a>
+                        <a href="robert.html" >Roberto</a>
+                        <a href="howing.html" >Howing</a>
+                        <a href="elena.html" >Elena</a>
+                        <a href="avery.html" >Avery</a>
+                    </div>
+                </div>
+
+                <div class="mainbox">
+                    <div class="text">
+                        <p >I started Breaking at the age of 21 in my native country Japan, and have been performing 
+                            and competing for 10 years both in Japan and the U.K. I am one of the founders of the crew.
+                        </p>	
+                    </div>
+                    <div class="boxes">
+                        <div class="box1">
+                            <div class="dropdown"><br>
+                                <div class="dropbtn2" onclick="awardinfo()">Awards and Experience</div>
+                                <p class="dropcon text"> <br>
+                                    <b>Judge award:</b> Sendai University 2016 <br><br>
+                                    Finalist: <br><br>
+                                    Grandmasters Jam 7 to smoke 2017 <br>
+                                    Break Mission Dirty 30s 2019 <br><br>
+                                    Semi Finalist: <br><br>
+                                    Disco Funk Night 2015 <br>
+                                    Loop De Dance Final Crew Battle 2016 <br>
+                                    Tuff Breaks 2vs2 2017 <br>
+                                    Grandmasters Jam 1vs1 2017  <br>
+                                    Tuff Breaks 2018 <br>
+                                    Delta Connection Battle for the Turf 2018 <br>
+                                    Break Mission x Just 4 Rockers 2vs2 2018 <br>
+                                    Full Circle 2019 <br>
+                                </p>
+                                <div class="cover">
+                                    <img src="images/katsumi.png" onclick="awardinfo()" width=100%> 
+                                </div>
+                            </div>		
+                        </div>
+                        <div class="box2">   
+                            <div><br><br><br><br><br><br><br>
+                                <a href="https://www.instagram.com/bboykat.katchthefunk">
+                                    <img class="ig" src="images/iglogo.png" width=70% >
+                                </a>
+                            </div><br>
+                            <div>
+                                <a  href="https://www.youtube.com/user/The19890928">
+                                    <img class="yt" src="images/ytlogo.png" width=50%>				
+                                </a>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
+
+                <div class='vid'><br>
+                    <iframe src="https://www.instagram.com/p/B3Shb_LBEiX/embed/" width=100% height=100%>
+                    </iframe>
+                </div>  
 			</div>	   
 		</div>	
+        <script>
+ 
+    function awardinfo() {
 
+      var x = document.getElementsByClassName("dropcon"); 
+      var y = document.getElementsByClassName("cover"); 
+      if (x[0].style.display === "none") {
+        x[0].style.display = "block";
+        y[0].style.display = "none";
+    } else {
+        x[0].style.display = "none";
+        y[0].style.display = "block";
+    }
+    }
+    
+    awardinfo()
+    
+    </script>
   	</body>
  
 </html>
+
 
