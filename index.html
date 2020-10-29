@@ -8,67 +8,100 @@
 	  
 	  	<div class="container">
             <nav class="nav">
+                <div class="ima">
+                    <a href="index.html"><img src="images/imalogo.jpg" width=130px>	</a>			 
+                </div>  
                 <div class="header">IMA Bristol</div>
-                <div class="homebutton">
+                <!-- <div class="logos"> -->
+                    <!-- <div class="text"> Follow us!
+                    </div><br> -->
+                <div class="logos">
+                        
+                        <a href="https://www.facebook.com/IMABristol0117">
+                            <img class="fb" src="images/fb.svg" >
+                        </a>
+                        <a href="https://www.instagram.com/IMABristol0117/">
+                            <img class="ig" src="images/iglogo.png" >
+                        </a>
+                    
+                </div> 
+                <div class="ima">
+                    <a href="index.html"><img src="images/imalogo.jpg" width=130px>	</a>			 
+                </div>  
+                <!-- <div class="homebutton">
                     <a href="index.html" class="button" >Home</a>
-                </div>
-                <div class="contactbutton">
+                </div> -->
+                <!-- <div class="contactbutton">
                     <a href="contact.html" class="button" >Contact us</a>
-                </div>
+                </div> -->
             </nav>
 
-        <div class="nonnav">
-			<div class="dropdown">
-                <a class="dropbtn" href="members.html">Members</a>
-                <div class="dropdown-content">
-                    <a href="katsumi.html" >Katsumi</a>
-                    <a href="harvey.html" class="button">Harvey</a>
-                    <a href="nestor.html" class="button">Nestor</a>
-                    <a href="miguel.html" class="button">Miguel</a>
-                    <a href="pasik.html" class="button">Pasik</a>
-                    <a href="arpad.html" class="button">Arpad</a>
-                    <a href="elvin.html" class="button">Elvin</a>
-                    <a href="robert.html" class="button">Roberto</a>
-                    <a href="howing.html" class="button">Howing</a>
-                    <a href="elena.html" class="button">Elena</a>
-                    <a href="avery.html" class="button">Avery</a>
-                </div>
-            </div>
-			
-			<div class="mainbox">
-				<div class="text">
-                    We are a breakdance (Bboy & Bgirl) Crew from Bristol established in 2017. We regularly train around
-                    Bristol and are available to do performances and events - please refer to contact us page
-                    <!-- Inspired to Make Art -->
-                </div><br>
-                <div class="img">
-                    <div class="freeze">
-                        <img  src="images/crew.png" width=100%></img>
+            <div class="flex1">
+                <div class="dropdown">
+                    <a class="dropbtn" href="members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="katsumi.html" >Katsumi</a>
+                        <a href="harvey.html" >Harvey</a>
+                        <a href="nestor.html" >Nestor</a>
+                        <a href="miguel.html" >Miguel</a>
+                        <a href="pasik.html" >Pasik</a>
+                        <a href="arpad.html" >Arpad</a>
+                        <a href="elvin.html" >Elvin</a>
+                        <a href="robert.html" >Roberto</a>
+                        <a href="howing.html" >Howing</a>
+                        <a href="elena.html" >Elena</a>
+                        <a href="avery.html" >Avery</a>
                     </div>
+                </div>
+                
+                <div class="mainbox">
+                    <div class="text">
+                        We are a breakdance (Bboy & Bgirl) Crew from Bristol established in 2017. We regularly train around
+                        Bristol and are available to do performances and events - please <a class="text" href="contact.html">contact us</a>
+                        <!-- Inspired to Make Art --> for more information!
+                    </div><br>
+                    <div class="img">
                     
-                    <div class="logos">
-                        <div class="text"> Follow us on Facebook!
-                        </div><br>
-                        <div>
-                            <a href="https://www.facebook.com/IMABristol0117">
-                                <img class="fb" src="images/fb.svg" width=70%>
-                            </a>
-                        </div><br>
-                        <div class="ima">
-                            <!-- <a  href="https://www.facebook.com/IMABristol0117"></a> -->
-                                <img src="images/imalogo.jpg" width=80%>				
-                            
-                        </div>
-                    </div>    
-                </div>        
-			</div>	
+                            <div class="freeze">
+                                <img class="mySlides" src="images/ima.png">
+                                <img class="mySlides" src="images/ima2.png">
+                                <img class="mySlides" src="images/ima3.png">
+                                <button class="w3-btn left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-btn right" onclick="plusDivs(+1)">&#10095;</button>
+                            </div>  
+                    </div>        
+                </div>	
 
-            <div class='vid'>
-				 <iframe width=100% height=100% src="https://www.youtube.com/embed/DGS4zr8Ny1U">
-    			 </iframe>
-            </div>    	
-	    </div> 		   	<br><br><br>
+                <div class='vid'><br>
+                    <iframe width=100% height=94% src="https://www.youtube.com/embed/DGS4zr8Ny1U?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media">
+                    </iframe>
+                </div> 
+
+            </div> 		   	<br><br>
+            <div class="text">
+                <footer>IMA Bristol 2020. Design by Harvey Jensen</footer>
+            </div>
 	    </div>
+
+<script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
   	</body>
  
