@@ -13,9 +13,15 @@
 .nav{
 	display: flex;
 	flex-direction: row;
-	/* justify-content: space-between; */
-	/* background: rgb(29, 167, 86); */
 	background: rgb(22, 71, 2);	
+}
+.navlogos{
+        /* border: solid black 2px; */
+        width: 25vw;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 	.header {
@@ -36,8 +42,9 @@
         align-items: center;
     }
     .fb{width: 60px;}
-
+    .ima{width:130px;}    
     .ig{width: 60px;}
+    .yt{width: 60px;}
 	
 .flex1{
 	display:flex;
@@ -47,23 +54,25 @@
 
 
 .mainbox{
-font-size:20px;
+
 padding: 20px; 
   /* border: solid green 2px; */
   width: 40vw;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
+ 
 }
     .text{
 	/* border: solid wheat 2px; */
 	/* width: 100%; */
     color: white;
-    
+    font-size:20px;
     }
 
     .boxes{display:flex;
-    flex-direction: row;}
+    flex-direction: row;
+     }
 
     .box1{
         /* display:flex; */
@@ -110,6 +119,7 @@ font-size:15px;
         border-radius: 10px;
         cursor: pointer;
     }
+
 .dropcon {display: none; padding:0 10px;}
 .cover{display:block;padding:0 10px;}
 .dropdown-content {display: none;}
@@ -121,7 +131,7 @@ font-size:15px;
     border-radius: 10px;
     padding: 7.5px 20px;
 	text-align: center;  
-	text-decoration: none;
+    text-decoration: none;
 }
 .dropdown:hover .dropdown-content {display:block;}
 .dropdown-content a:hover {background-color: white; color: black;}
@@ -130,6 +140,7 @@ font-size:15px;
 .yt:hover{border-radius: 30px;}
 .ig:hover{border-radius: 30px;}
 footer{text-align: center;}
+span{display: none;}
 
 @media (max-width:1000px){
 	.flex1{
@@ -146,15 +157,20 @@ footer{text-align: center;}
 
 	.mainbox{
 		width: 90vw;
-	}
+    }
+    
     .vid{
-		width:92vw;
+        width:92vw;
+        height: 100vmin;
 	}
 	.header{
 		width: 90vw;
-		padding: 4px 0px;
+        padding: 4px 0px;
+        font-size: 10vw;
 	}
-	.logos{
-		flex-direction: column;
-	}
+	.logos{flex-direction: column;}
+    .hide{display: none;}
+    .ima{width:250px;} 
+    .text{font-size:4vw;}
+    span{display: block;}
 }
