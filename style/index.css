@@ -28,26 +28,15 @@
 	/* border: white solid 2px; */
 	}
 
-	/* .homebutton{order:2;} */
-	
-	/* .button {
-		padding: 31px 45px;
-		background-color: white;
-		display: block;
-		border-radius: 20px;
-		font-family: cooper;
-		font-weight: bold;
-		transition-duration: 0.4s;
-        text-align: center;
-        border: black solid 2px;
-	 } */
-	
-	 /* .button:hover {
-	  background-color: #4CAF50; 
-	  color: green;
-	} */
-
-	/* .contactbutton {order:0;} */
+	.navlogos{
+		/* border: solid black 2px; */
+		width: 25vw;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	}
+	.ima{width:130px;}    
 	
 .flex1{
 	display:flex;
@@ -162,6 +151,9 @@ footer{text-align: center;}
 	flex-direction: column;
 	align-items: center;
 	}
+	.navlogos{
+		flex-direction: column;
+	}
 	.dropdown{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -175,12 +167,17 @@ footer{text-align: center;}
 	}
     .vid{
 		width:92vw;
+		height:100vmin;
 	}
 	.header{
 		width: 90vw;
-		padding: 30px 0px;
+		padding: 3% 5%;
+		font-size: 10vw;
 	}
 	.logos{
 		flex-direction: column;
 	}
+	.hide{display: none;}
+	.text{font-size:4vw;}
+
 }
