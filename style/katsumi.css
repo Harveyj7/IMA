@@ -16,7 +16,6 @@
 	background: rgb(22, 71, 2);	
 }
 .navlogos{
-        /* border: solid black 2px; */
         width: 25vw;
     justify-content: space-evenly;
     display: flex;
@@ -31,21 +30,17 @@
 	color:white;
 	font-size: 50px;
 	font-weight: 600;
-	/* border: white solid 2px; */
     }
-    .logos{
-        /* border: solid white 2px; */
+    /* .logos{
         width: 25vw;
         justify-content: space-evenly;
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
-    .fb{width: 60px;}
+        border: wheat solid 2px;
+    } */
     .ima{width:130px;}    
-    .ig{width: 60px;}
-    .yt{width: 60px;}
-	
+  
 .flex1{
 	display:flex;
 	flex-direction: row;
@@ -54,20 +49,15 @@
 
 
 .mainbox{
-
-padding: 20px; 
-  /* border: solid green 2px; */
+    padding: 20px; 
   width: 40vw;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
- 
 }
     .text{
-	/* border: solid wheat 2px; */
-	/* width: 100%; */
     color: white;
-    font-size:20px;
+    font-size:18px;
     }
 
     .boxes{display:flex;
@@ -75,14 +65,14 @@ padding: 20px;
      }
 
     .box1{
-        /* display:flex; */
         width: 70%;
-        /* border: solid white 2px; */
     }
     .box2{
-        /* border: solid white 2px; */
+        display:flex;
+        flex-direction: column;
         width: 30%;
-        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
 
@@ -99,7 +89,7 @@ font-size:15px;
     flex-direction: column;
 }
     .dropbtn {
-        padding: 21px 30px;
+        padding: 20px 28px;
         background-color: white;
         color:black;
         border: black solid 2px;
@@ -110,18 +100,6 @@ font-size:15px;
         transition-duration: 0.4s;
     }
 
-    .dropbtn2 {
-        padding: 10px; 
-        background-color: white; 
-        color:black;
-        display: flex;
-        text-align: center;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-.dropcon {display: none; padding:0 10px;}
-.cover{display:block;padding:0 10px;}
 .dropdown-content {display: none;}
 .dropdown-content a {
 	background: rgb(22, 71, 2);	
@@ -136,17 +114,41 @@ font-size:15px;
 .dropdown:hover .dropdown-content {display:block;}
 .dropdown-content a:hover {background-color: white; color: black;}
 
+    .dropbtn2 {
+        padding: 10px; 
+        background-color: white; 
+        color:black;
+        display: flex;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+.dropcon {display: none; padding:0 10px;}
+.cover{display:block;padding:0 10px;}
+
+footer{text-align: center;}
+span{display: none;}
+
+.ig{width: 5vw;}
+.yt{width: 5vw;}
+.fb{width: 5vw;}
 .fb:hover{border-radius: 30px;}
 .yt:hover{border-radius: 30px;}
 .ig:hover{border-radius: 30px;}
-footer{text-align: center;}
-span{display: none;}
 
 @media (max-width:1000px){
 	.flex1{
 	flex-direction: column;
 	align-items: center;
-	}
+    }
+    .navlogos{
+		flex-direction: column;
+    }
+    .fb{width: 10vw;}
+    .ig{width: 10vw;}
+    .yt{width: 10vw;}
+    .ima{width:30vw;}  
 	.dropdown{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -161,16 +163,15 @@ span{display: none;}
     
     .vid{
         width:92vw;
-        height: 100vmin;
+        height: 68vmin;
 	}
 	.header{
 		width: 90vw;
-        padding: 4px 0px;
+        padding: 3% 5%;
         font-size: 10vw;
 	}
 	.logos{flex-direction: column;}
     .hide{display: none;}
-    .ima{width:250px;} 
     .text{font-size:4vw;}
     span{display: block;}
 }
