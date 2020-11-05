@@ -1,192 +1,100 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: calibri;
-}
+<html>
+  <head>
+	<title> Harvey - Bboy RVJ </title>
+	<link rel="stylesheet" type="text/css" href="style/harvey.css"> </link>
+  </head>
+  	<body>
+	  
+		<div class="container">
+			<nav class="nav">
+                <div >
+                    <a href="index.html"><img class="ima" src="images/imalogo.jpg">	</a>			 
+                </div>  
+                <div class="header">Harvey - Bboy RVJ</div>
+                <div class="navlogos">   
+                        <a href="https://www.facebook.com/IMABristol0117">
+                            <img class="fb" src="images/fb.svg" >
+                        </a>
+                        <a href="https://www.instagram.com/IMABristol0117/">
+                            <img class="ig" src="images/iglogo.png" >
+                        </a>
+                    
+                </div> 
+                <div >
+                    <a href="index.html"><img class="ima hide" src="images/imalogo.jpg">	</a>			 
+                </div>  
+            </nav>
 
-.container {
-	padding: 5px;
-    background: rgb(26, 54, 37);
-}
+			<div class="flex1">
+				<div class="dropdown">
+                    <a class="dropbtn text" href="members.html">Members</a>
+                    <div class="dropdown-content text">
+                        <a href="katsumi.html" >Katsumi</a>
+                        <a href="harvey.html" >Harvey</a>
+                        <a href="nestor.html" >Nestor</a>
+                        <a href="miguel.html" >Miguel</a>
+                        <a href="pasik.html" >Pasik</a>
+                        <a href="arpad.html" >Arpad</a>
+                        <a href="elvin.html" >Elvin</a>
+                        <a href="robert.html" >Roberto</a>
+                        <a href="howing.html" >Howing</a>
+                        <a href="elena.html" >Elena</a>
+                        <a href="avery.html" >Avery</a>
+                    </div>
+                </div>
 
-.nav{
-	display: flex;
-	flex-direction: row;
-	/* justify-content: space-between; */
-    background: rgb(22, 71, 2);	
-	
-}
+				<div class="mainbox">
+					<div class="text">
+					I've been breaking since 2015 and became a member of IMA in 2018 when I did a year
+						working in Bristol. Check out the videos and <b>follow my Instagram and subscribe to my Youtube! </b>
+					</div><br>
+					
+					<div class="img">
+						
+						<div class="freeze">
+							<img  src="images/freeze.jpg" width=100%>
+							<div class="innerText">Airfreeze</div>
+						</div>
+						<div class="logos">
+							<!-- <div>
+								<a href="https://www.facebook.com/harvey.jensen/">	
+								<img class="me" src="images/fb.svg" width=70%></a>
+							</div><br> -->
+							<div>
+								<a href="https://www.instagram.com/harvenator77/">
+									<img class="ig" src="images/iglogo.png" width=70% >
+								</a>
+							</div><br>
+							<div>
+								<a  href="https://www.youtube.com/channel/UCtB6CioC-l5NWDDqrcH1siA?view_as=subscriber">
+									<img class="yt" src="images/ytlogo.png" width=70%>				
+								</a>
+							</div>
+							
+						</div>	
+					</div>	
+				</div>	
 
-	.header {
-        width:100vw;
-        padding: 30px 0 30px 15%;
-        text-align: center;
-        color:white;
-        font-size: 50px;
-        font-weight: 600;
-    }
-    .navlogos{
-			width: 25vw;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        }
-        
-    .ima{width:130px;}    
-	
-.flex1{
-	display:flex;
-	flex-direction: row;
-    flex-wrap: nowrap;
-}
+				<div ><br>
+					<iframe class='vid' src="https://www.youtube.com/embed/CGG5c6IL5b0">
+					</iframe>
+				</div>  			
+			</div>
+			<br>
+			<p class="text center"> I mainly focus on strength based movements and enjoy practicing tricking and tumbling,
+				my main style is unexpected movements in my rounds!</p><br>
+			<div class= flex2>
+				<iframe class="power" src="https://www.instagram.com/p/ByE_aSIg1Zu/embed/"></iframe>
+				<br>
+				<iframe class="tricks" src="https://www.instagram.com/p/CBdajpBgdq2/embed/"></iframe>
+			</div><br><br>
+            
+			<div class="text center">
+                <footer>IMA Bristol 2020. Design by Harvey Jensen</footer>
+            </div>
+		</div>
+		
 
-.mainbox{
-    padding: 20px; 
-  width: 40vw;
-}
-    .text{
-        font-size:18px;
-        color:white;
-    }
-    .center{text-align: center;}
-
-	.img{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-    }
-    
-    .logos{
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 25%;
-        /* border: solid black 2px; */
-
-		}
-		.freeze{
-		width: 75%;
-		border: solid black 2px;
-		}
-
-.innerText{display:none; color:white; font-size: 40px;}
-/* .freeze:hover .innerText{
-    display:block;
-    position:absolute;
-    top:50%; left:50%; 
-    transform: translate(-50%, -50%);
-} */
-
-.vid{
-font-size:15px;
-  text-align: center;
-  width: 48vw;
-  height: 75vh;
-}
-.dropbtn {
-	padding: 20px 28px;
-	background-color: white;
-	color:black;
-    border: rgb(26, 54, 37) solid 2px;
-	display: block;
-	border-radius: 10px;
-	text-decoration: none;
-	font-weight: bold;
-	transition-duration: 0.4s;
-}
-
-.dropdown {
-    display: flex;
-    flex-direction: column;
-    /* display: inline-block;  */
-}
-.dropdown-content {display: none;}
-.dropdown-content a {
-	background: rgb(22, 71, 2);
-	color: white;
-    display: block;
-    border: rgb(26, 54, 37) solid 2px;
-    border-radius: 10px;
-    padding: 7.5px 20px;
-	text-align: center;  
-	text-decoration: none;
-}
-.dropdown:hover .dropdown-content {display:block;}
-.dropdown-content a:hover {background-color: white; color: black;}
-
-.ig{width: 5vw;}
-.yt{width: 60px;}
-.fb{width: 5vw;}
-.me{width: 60px;}
-
-.me:hover{border-radius: 40px;}
-.fb:hover{border-radius: 30px;}
-.yt:hover{border-radius: 30px;}
-.ig:hover{border-radius: 30px;}
-
-.flex2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* border: black solid 2px; */
-}
-    .power{width: 48vw;
-        height: 100vh;}
-    .tricks{width: 48vw;
-        height: 100vh;}
-
-
-@media (max-width:1000px){
-    .flex1{
-    flex-direction: column; 
-    align-items: center;
-	}
-    
-	.navlogos{
-        flex-direction: column;
-    }
-    .fb{width: 10vw;}
-    .ig{width: 10vw;}
-    .yt{width: 10vw;}
-    .ima{width:30vw;}   
-     .freeze{width: 80%;}
-    .logos{ width:20%;}
-	.dropdown{
-		flex-direction: row;
-		flex-wrap: wrap;
-        justify-content: center;
-        }
-    .dropdown:hover .dropdown-content {display:flex;
-        flex-wrap: wrap;}
-
-    /* .dropdown-content a {padding: 20px;} */
-    .dropbtn{padding: 10px 20px;}
-	.mainbox{
-		width: 90vw;
-	}
-    .vid{
-        width:92vw; 
-        height: 100vmin;
-    }
-    .header{
-        width: 90vw;
-		padding: 3% 5%;
-		font-size: 10vw;
-    }
-   
-    .flex2{ 
-        flex-direction: column;
-        align-items: center;
-    }
-    .power{
-        width: 80vw;
-        height: 100vmin;}
-    .tricks{
-        width: 80vw;
-        height: 100vmin;}
-    .hide{display: none;}
-    .text{font-size:4vw;}
-}
-
+  	</body>
+ 
+</html>
