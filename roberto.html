@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title> Bboy Roberto </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/roberto.css"> </link>
+</head>
+  	<body>
+	  
+	  	<div class="container">
+            <nav class="nav">
+                <div >
+                    <a href="index.html"><img class="ima" src="images/imalogo.jpg">	</a>			 
+                </div>  
+                <div class="header"> Bboy Roberto</div>
+                <div class="navlogos">   
+                        <a href="https://www.facebook.com/IMABristol0117">
+                            <img class="fb" src="images/fb.svg" >
+                        </a>
+                        <a href="https://www.instagram.com/IMABristol0117/">
+                            <img class="ig" src="images/iglogo.png" >
+                        </a>
+                    
+                </div> 
+                <div >
+                    <a href="index.html"><img class="ima hide" src="images/imalogo.jpg">	</a>			 
+                </div>  
+            </nav>
+
+            <div class="flex1">
+                <div class="dropdown">
+                    <a class="dropbtn text" href="members.html">Members</a>
+                    <div class="dropdown-content text">
+                        <a href="katsumi.html" >Katsumi</a>
+                        <a href="harvey.html" >Harvey</a>
+                        <a href="nestor.html" >Nestor</a>
+                        <a href="miguel.html" >Miguel</a>
+                        <a href="pasik.html" >Pasik</a>
+                        <a href="arpad.html" >Arpad</a>
+                        <a href="elvin.html" >Elvin</a>
+                        <a href="roberto.html" >Roberto</a>
+                        <a href="howing.html" >Howing</a>
+                        <a href="elena.html" >Elena</a>
+                        <a href="avery.html" >Avery</a>
+                    </div>
+                </div>
+                
+                <div class="mainbox">
+                    <div class="text">
+                        I embraced the Hip Hop culture many years ago in Italy as a music lover at
+                         the beginning and then more actively as an Mc and Dj in addition to 
+                         organizing and participating in various jams and gigs. When I moved in 
+                         Bristol in 2017 I started breaking and the year after I joined the Illest 
+                         Men Alive sharing my knowledge and improving my skills.
+                    </div><br>
+                    <div class="img">
+                    
+                            <div class="freeze">
+                                <img class="mySlides" src="images/roberto1.png">
+                                <img class="mySlides" src="images/roberto2.png">
+                                <img class="mySlides" src="images/roberto3.png">
+                                <button class="w3-btn left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-btn right" onclick="plusDivs(+1)">&#10095;</button>
+                            </div>  
+                    </div>        
+                </div>	
+                <div >
+                    <video class='vid' controls autoplay preload="metadata">
+                        <source src="images/robvid2.mp4#t=1.5" type=video/mp4 >
+                    </video>
+                </div> 
+            </div> 
+            <div class="flex2">	 
+                
+                <video class="vid2" controls autoplay preload="metadata">
+                    <source src="images/robvid1.mp4#t=1.5" type=video/mp4  >
+                </video>	
+                
+            </div>
+                      	<br>
+            <div class="text center">
+                <footer>IMA Bristol 2020. Design by Harvey Jensen</footer>
+            </div>
+	    </div>
+
+<script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+  	</body>
+ 
+</html>
