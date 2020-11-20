@@ -140,10 +140,10 @@ footer{text-align: center;}
 	.navlogos{
 		flex-direction: column;
 	}
-	.fb{width: 10vw;}
-	.ig{width: 10vw;}
-	.yt{width: 10vw;}
-	.ima{width:30vw;}   
+	.fb{width: 8vw;}
+	.ig{width: 8vw;}
+	.yt{width: 8vw;}
+	.ima{width:20vw;}   
 	.dropdown{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -161,13 +161,24 @@ footer{text-align: center;}
 	}
 	.header{
 		width: 90vw;
-		padding: 3% 5%;
-		font-size: 10vw;
+		padding: 5% 3%;
+		font-size: 7vw;
 	}
 	.logos{
 		flex-direction: column;
 	}
 	.hide{display: none;}
-	.text{font-size:5vw;}
+	.text{font-size:4vw;}
+}
 
+@media (max-width:600px){
+	.ima{width:30vw;} 
+	.header{
+		padding: 3% 5%;
+		font-size: 10vw;
+	}
+	.text{font-size:5vw;}
+	.dropbtn {padding: 10px 15px;}
+	.fb{width: 10vw;}
+	.ig{width: 10vw;}
 }
