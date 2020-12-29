@@ -62,7 +62,6 @@
 .freeze {
   position: relative;
   object-fit: contain;
-  /* border: rgb(22, 71, 2) 4px solid; */
 }
 
 .mySlides {
